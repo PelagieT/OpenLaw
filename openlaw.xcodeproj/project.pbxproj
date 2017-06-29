@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F75ECC11F04FA54008B7C1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F75ECB71F04FA53008B7C1C /* AppDelegate.swift */; };
+		9F75ECC21F04FA54008B7C1C /* ZFRippleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F75ECB81F04FA53008B7C1C /* ZFRippleButton.swift */; };
+		9F75ECC31F04FA54008B7C1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F75ECB91F04FA54008B7C1C /* ViewController.swift */; };
+		9F75ECC41F04FA54008B7C1C /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F75ECBA1F04FA54008B7C1C /* PageViewController.swift */; };
+		9F75ECC51F04FA54008B7C1C /* PageViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F75ECBB1F04FA54008B7C1C /* PageViewController2.swift */; };
+		9F75ECC61F04FA54008B7C1C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F75ECBC1F04FA54008B7C1C /* ResultViewController.swift */; };
+		9F75ECC71F04FA54008B7C1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F75ECBD1F04FA54008B7C1C /* Main.storyboard */; };
+		9F75ECC81F04FA54008B7C1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F75ECBE1F04FA54008B7C1C /* Assets.xcassets */; };
+		9F75ECC91F04FA54008B7C1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F75ECBF1F04FA54008B7C1C /* LaunchScreen.storyboard */; };
+		9F75ECCA1F04FA54008B7C1C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F75ECC01F04FA54008B7C1C /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9F75ECA11F04FA24008B7C1C /* openlaw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openlaw.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F75ECB61F04FA51008B7C1C /* openlaw-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "openlaw-Bridging-Header.h"; sourceTree = "<group>"; };
+		9F75ECB71F04FA53008B7C1C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9F75ECB81F04FA53008B7C1C /* ZFRippleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZFRippleButton.swift; sourceTree = "<group>"; };
+		9F75ECB91F04FA54008B7C1C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F75ECBA1F04FA54008B7C1C /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		9F75ECBB1F04FA54008B7C1C /* PageViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController2.swift; sourceTree = "<group>"; };
+		9F75ECBC1F04FA54008B7C1C /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		9F75ECBD1F04FA54008B7C1C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9F75ECBE1F04FA54008B7C1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F75ECBF1F04FA54008B7C1C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F75ECC01F04FA54008B7C1C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F75EC9E1F04FA24008B7C1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F75EC981F04FA24008B7C1C = {
+			isa = PBXGroup;
+			children = (
+				9F75ECA31F04FA24008B7C1C /* openlaw */,
+				9F75ECA21F04FA24008B7C1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F75ECA21F04FA24008B7C1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F75ECA11F04FA24008B7C1C /* openlaw.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F75ECA31F04FA24008B7C1C /* openlaw */ = {
+			isa = PBXGroup;
+			children = (
+				9F75ECB71F04FA53008B7C1C /* AppDelegate.swift */,
+				9F75ECB81F04FA53008B7C1C /* ZFRippleButton.swift */,
+				9F75ECB91F04FA54008B7C1C /* ViewController.swift */,
+				9F75ECBA1F04FA54008B7C1C /* PageViewController.swift */,
+				9F75ECBB1F04FA54008B7C1C /* PageViewController2.swift */,
+				9F75ECBC1F04FA54008B7C1C /* ResultViewController.swift */,
+				9F75ECBD1F04FA54008B7C1C /* Main.storyboard */,
+				9F75ECBE1F04FA54008B7C1C /* Assets.xcassets */,
+				9F75ECBF1F04FA54008B7C1C /* LaunchScreen.storyboard */,
+				9F75ECC01F04FA54008B7C1C /* Info.plist */,
+				9F75ECB61F04FA51008B7C1C /* openlaw-Bridging-Header.h */,
+			);
+			path = openlaw;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F75ECA01F04FA24008B7C1C /* openlaw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F75ECB31F04FA25008B7C1C /* Build configuration list for PBXNativeTarget "openlaw" */;
+			buildPhases = (
+				9F75EC9D1F04FA24008B7C1C /* Sources */,
+				9F75EC9E1F04FA24008B7C1C /* Frameworks */,
+				9F75EC9F1F04FA24008B7C1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = openlaw;
+			productName = openlaw;
+			productReference = 9F75ECA11F04FA24008B7C1C /* openlaw.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F75EC991F04FA24008B7C1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Spiro Raptis";
+				TargetAttributes = {
+					9F75ECA01F04FA24008B7C1C = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9F75EC9C1F04FA24008B7C1C /* Build configuration list for PBXProject "openlaw" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F75EC981F04FA24008B7C1C;
+			productRefGroup = 9F75ECA21F04FA24008B7C1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F75ECA01F04FA24008B7C1C /* openlaw */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F75EC9F1F04FA24008B7C1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F75ECCA1F04FA54008B7C1C /* Info.plist in Resources */,
+				9F75ECC91F04FA54008B7C1C /* LaunchScreen.storyboard in Resources */,
+				9F75ECC81F04FA54008B7C1C /* Assets.xcassets in Resources */,
+				9F75ECC71F04FA54008B7C1C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F75EC9D1F04FA24008B7C1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F75ECC31F04FA54008B7C1C /* ViewController.swift in Sources */,
+				9F75ECC51F04FA54008B7C1C /* PageViewController2.swift in Sources */,
+				9F75ECC11F04FA54008B7C1C /* AppDelegate.swift in Sources */,
+				9F75ECC21F04FA54008B7C1C /* ZFRippleButton.swift in Sources */,
+				9F75ECC41F04FA54008B7C1C /* PageViewController.swift in Sources */,
+				9F75ECC61F04FA54008B7C1C /* ResultViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9F75ECB11F04FA25008B7C1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F75ECB21F04FA25008B7C1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F75ECB41F04FA25008B7C1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = openlaw/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = spiros.openlaw;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "openlaw/openlaw-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9F75ECB51F04FA25008B7C1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = openlaw/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = spiros.openlaw;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "openlaw/openlaw-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F75EC9C1F04FA24008B7C1C /* Build configuration list for PBXProject "openlaw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F75ECB11F04FA25008B7C1C /* Debug */,
+				9F75ECB21F04FA25008B7C1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F75ECB31F04FA25008B7C1C /* Build configuration list for PBXNativeTarget "openlaw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F75ECB41F04FA25008B7C1C /* Debug */,
+				9F75ECB51F04FA25008B7C1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F75EC991F04FA24008B7C1C /* Project object */;
+}

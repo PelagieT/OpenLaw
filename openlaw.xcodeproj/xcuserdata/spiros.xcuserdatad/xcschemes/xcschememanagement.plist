@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>pelagia.xcscheme</key>
+		<key>openlaw.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>9F039B541E1FE2980023259D</key>
+		<key>9F75ECA01F04FA24008B7C1C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

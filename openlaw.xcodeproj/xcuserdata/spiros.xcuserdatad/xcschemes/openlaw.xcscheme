@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0830"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9F039B541E1FE2980023259D"
-               BuildableName = "pelagia.app"
-               BlueprintName = "pelagia"
-               ReferencedContainer = "container:pelagia.xcodeproj">
+               BlueprintIdentifier = "9F75ECA01F04FA24008B7C1C"
+               BuildableName = "openlaw.app"
+               BlueprintName = "openlaw"
+               ReferencedContainer = "container:openlaw.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9F039B541E1FE2980023259D"
-            BuildableName = "pelagia.app"
-            BlueprintName = "pelagia"
-            ReferencedContainer = "container:pelagia.xcodeproj">
+            BlueprintIdentifier = "9F75ECA01F04FA24008B7C1C"
+            BuildableName = "openlaw.app"
+            BlueprintName = "openlaw"
+            ReferencedContainer = "container:openlaw.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9F039B541E1FE2980023259D"
-            BuildableName = "pelagia.app"
-            BlueprintName = "pelagia"
-            ReferencedContainer = "container:pelagia.xcodeproj">
+            BlueprintIdentifier = "9F75ECA01F04FA24008B7C1C"
+            BuildableName = "openlaw.app"
+            BlueprintName = "openlaw"
+            ReferencedContainer = "container:openlaw.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9F039B541E1FE2980023259D"
-            BuildableName = "pelagia.app"
-            BlueprintName = "pelagia"
-            ReferencedContainer = "container:pelagia.xcodeproj">
+            BlueprintIdentifier = "9F75ECA01F04FA24008B7C1C"
+            BuildableName = "openlaw.app"
+            BlueprintName = "openlaw"
+            ReferencedContainer = "container:openlaw.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
