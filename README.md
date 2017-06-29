@@ -22,7 +22,10 @@ Finally, in the last stage, you have the opportunity to find out if you are enti
 ![img3](https://raw.githubusercontent.com/PelagieT/OpenLaw/master/4..png)
 
 Also, in this last stage, OpenLaw is connected to Open Hellenic Legislation.
-[link](http://wapps.islab.uom.gr:8084/OpenHellenicLegislation/Browser)
+Thus, you can navigate through disability legislation and discover changes through time. In this application,
+legislation have been transformed into Linked Open Data (LOD) and visualised in RDF language.
+
+[Open Hellenic Legislation-ISLAB](http://wapps.islab.uom.gr:8084/OpenHellenicLegislation/Browser)
 
 
 
