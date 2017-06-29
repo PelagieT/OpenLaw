@@ -6,7 +6,7 @@ This application have been developed as part of Master Degree thesis for Master 
 
 # How to run
 
-Open ```..xcodeproj``` file in Xcode (version 8 and up) to run the project.
+Open ```.xcodeproj``` file in Xcode (version 8 and up) to run the project.
 
 # How to use
 
