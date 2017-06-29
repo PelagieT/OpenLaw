@@ -2,7 +2,7 @@
 
 iOS Application for Greek Disability Legislation connected to Application Open Hellenic Legislation from ISLAB-University of 
 Macedonia. Available in Greek (soon in English too).
-This application have been developed as part of Master Degree thesis for Master in Public Administration of University of Macedonia, Greece.
+This application has been developed as part of the Master Degree thesis in Public Administration,University of Macedonia, Greece.
 
 # How to run
 
