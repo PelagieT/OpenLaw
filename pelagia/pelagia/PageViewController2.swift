@@ -59,6 +59,11 @@ class PageViewController2: UIViewController,UIPickerViewDataSource,UIPickerViewD
     
     func nextView(){
         var vc = self.storyboard!.instantiateViewController(withIdentifier: "Result") as! ResultViewController
+        var links:[String:String] = [:]
+
+        links["ΙΚΑ"] = "http://wapps.islab.uom.gr:8084/OpenHellenicLegislation/CategoryBrowser?subject=15b"
+        links["ΟΑΕΕ"] = "http://wapps.islab.uom.gr:8084/OpenHellenicLegislation/CategoryBrowser?subject=39"
+        links["ΓΛΚ"] = "http://wapps.islab.uom.gr:8084/OpenHellenicLegislation/CategoryBrowser?subject=29"
 
         
         if((selectedRow1 == "ΙΚΑ" || selectedRow1 == "ΟΑΕΕ") && selectedRow2 != "Επίδομα Απολύτου Αναπηρίας" ){
@@ -111,6 +116,15 @@ class PageViewController2: UIViewController,UIPickerViewDataSource,UIPickerViewD
         } else {
             vc.resultString = "ΠΑΡΟΧΗ OXI"
         }
+        
+        if(selectedRow1 == "ΙΚΑ"){
+            vc.link = links["ΙΚΑ"]!
+        } else if (selectedRow1 == "ΟΑΕΕ"){
+            vc.link = links["ΟΑΕΕ"]!
+        } else if (selectedRow1 == "ΔΗΜΟΣΙΟ-ΓΛΚ"){
+            vc.link = links["ΓΛΚ"]!
+        }
+        
     
         self.navigationController?.pushViewController(vc, animated: true)
         
