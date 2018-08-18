@@ -23,7 +23,7 @@ class PageViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDe
 
         // Do any additional setup after loading the view.
         pickerData1 = ["ΙΚΑ", "ΟΑΕΕ", "ΔΗΜΟΣΙΟ-ΓΛΚ"]
-        pickerData2 = ["Σύνταξη Αναπηρίας Κοινή νόσος","Σύνταξη Αναπηρίας Εργ.Ατύχημα","Σύνταξη Αναπηρίας Ατύχημα Εκ. Εργασίας" ,"Επίδομα Απολύτου Αναπηρίας", "Εξωιδρυματικό Παραπληγ. Επίδομα","Σύνταξη Γήρατος(Με ειδ. διατάξεις)"]
+        pickerData2 = ["Κοινή νόσος","Εργατικό Ατύχημα","Ατύχημα Εκτός Εργασίας" ,"Απόλυτη Αναπηρία", "Παραπληγία","Γήρας (Ειδ. διατάξεις)"]
         pickerview1.delegate = self
         pickerview2.delegate = self
         pickerview1.dataSource = self
@@ -40,7 +40,7 @@ class PageViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDe
         selectedRow2 = pickerData2[pickerview2.selectedRow(inComponent: 0)]
     }
     
-    func nextView(){
+    @objc func nextView(){
         let vc = self.storyboard!.instantiateViewController(withIdentifier: "page2") as! PageViewController2
         vc.selectedRow1 = selectedRow1
         vc.selectedRow2 = selectedRow2
@@ -112,7 +112,7 @@ class PageViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDe
                 pickerview2.reloadAllComponents()
                 selectedRow2 = pickerData2[pickerview2.selectedRow(inComponent: 0)]
             } else {
-                pickerData2 = ["Σύνταξη Αναπηρίας Κοινή νόσος","Σύνταξη Αναπηρίας Εργ.Ατύχημα","Σύνταξη Αναπηρίας Ατύχημα Εκ. Εργασίας" ,"Επίδομα Απολύτου Αναπηρίας", "Εξωιδρυματικό Παραπληγ. Επίδομα","Σύνταξη Γήρατος(Με ειδ. διατάξεις)"]
+                pickerData2 = ["Κοινή νόσος","Εργατικό Ατύχημα","Ατύχημα Εκτός Εργασίας" ,"Απόλυτη Αναπηρία", "Παραπληγία","Γήρας (Ειδ. διατάξεις)"]
                 pickerview2.reloadAllComponents()
                 selectedRow2 = pickerData2[pickerview2.selectedRow(inComponent: 0)]
             }

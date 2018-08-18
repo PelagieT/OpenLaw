@@ -38,7 +38,7 @@ class PageViewController2: UIViewController,UIPickerViewDataSource,UIPickerViewD
     override func viewWillAppear(_ animated: Bool) {
         print(selectedRow2)
         print(selectedRow1)
-        if((selectedRow1 == "ΙΚΑ" || selectedRow1 == "ΟΑΕΕ" ) && selectedRow2 == "Επίδομα Απολύτου Αναπηρίας"){
+        if((selectedRow1 == "ΙΚΑ" || selectedRow1 == "ΟΑΕΕ" ) && selectedRow2 == "Απόλυτη Αναπηρία"){
             question1.text = "ΛΗΨΗ ΣΥΝΤΑΞΗΣ"
             pickerData1 = ["Γήρατος","Αναπηρίας","Θανάτου"]
             selectedRowCurrent1 = pickerview1.selectedRow(inComponent: 0)
@@ -57,7 +57,7 @@ class PageViewController2: UIViewController,UIPickerViewDataSource,UIPickerViewD
 
     }
     
-    func nextView(){
+    @objc func nextView(){
         var vc = self.storyboard!.instantiateViewController(withIdentifier: "Result") as! ResultViewController
         var links:[String:String] = [:]
 
@@ -66,55 +66,55 @@ class PageViewController2: UIViewController,UIPickerViewDataSource,UIPickerViewD
         links["ΓΛΚ"] = "http://wapps.islab.uom.gr:8084/OpenHellenicLegislation/CategoryBrowser?subject=29"
 
         
-        if((selectedRow1 == "ΙΚΑ" || selectedRow1 == "ΟΑΕΕ") && selectedRow2 != "Επίδομα Απολύτου Αναπηρίας" ){
-            if (selectedRow2 == "Σύνταξη Αναπηρίας Κοινή νόσος") && (selectedRowCurrent2 >= 1) && (selectedRowCurrent1 >= 4 ){
+        if((selectedRow1 == "ΙΚΑ" || selectedRow1 == "ΟΑΕΕ") && selectedRow2 != "Απόλυτη Αναπηρία" ){
+            if (selectedRow2 == "Κοινή νόσος") && (selectedRowCurrent2 >= 1) && (selectedRowCurrent1 >= 4 ){
                 if selectedRow1 == "ΟΑΕΕ" && selectedRowCurrent2 < 2{
-                    vc.resultString = "ΠΑΡΟΧΗ OXI"
+                    vc.resultString = "ΑΠΟΡΡΙΨΗ ΑΣΦΑΛΙΣΤΙΚΗΣ ΠΑΡΟΧΗΣ"
                 } else{
-                  vc.resultString = "ΠΑΡΟΧΗ ΝΑΙ"
+                  vc.resultString = "ΣΥΝΤΑΞΗ ΑΝΑΠΗΡΙΑΣ ΚΟΙΝΗ ΝΟΣΟΣ"
                 }
-            } else if (selectedRow2 == "Σύνταξη Αναπηρίας Εργ.Ατύχημα") && selectedRowCurrent1 >= 0 && selectedRowCurrent2 >= 1{
+            } else if (selectedRow2 == "Εργατικό Ατύχημα") && selectedRowCurrent1 >= 0 && selectedRowCurrent2 >= 1{
                 if selectedRow1 == "ΟΑΕΕ" && selectedRowCurrent2 < 2{
-                    vc.resultString = "ΠΑΡΟΧΗ OXI"
+                    vc.resultString = "ΑΠΟΡΡΙΨΗ ΑΣΦΑΛΙΣΤΙΚΗΣ ΠΑΡΟΧΗΣ"
                 } else{
-                    vc.resultString = "ΠΑΡΟΧΗ ΝΑΙ"
+                    vc.resultString = "ΣΥΝΤΑΞΗ ΑΝΑΠΗΡΙΑΣ ΕΡΓ. ΑΤΥΧΗΜΑ"
                 }
-            } else if (selectedRow2 == "Σύνταξη Αναπηρίας Ατύχημα Εκ. Εργασίας") && selectedRowCurrent1 >= 2 && selectedRowCurrent2 >= 1 {
+            } else if (selectedRow2 == "Ατύχημα Εκτός Εργασίας") && selectedRowCurrent1 >= 2 && selectedRowCurrent2 >= 1 {
                 if selectedRow1 == "ΟΑΕΕ" && selectedRowCurrent2 < 2{
-                    vc.resultString = "ΠΑΡΟΧΗ OXI"
+                    vc.resultString = "ΑΠΟΡΡΙΨΗ ΑΣΦΑΛΙΣΤΙΚΗΣ ΠΑΡΟΧΗΣ"
                 } else{
-                    vc.resultString = "ΠΑΡΟΧΗ ΝΑΙ"
+                    vc.resultString = "ΣΥΝΤΑΞΗ ΑΝΑΠΗΡΙΑΣ ΑΤΥΧΗΜΑ ΕΚΤΟΣ ΕΡΓΑΣΙΑΣ"
                 }
-            } else if (selectedRow2 == "Επίδομα Απολύτου Αναπηρίας") && selectedRowCurrent2 >= 3 {
-                   vc.resultString = "ΠΑΡΟΧΗ ΝΑΙ"
-            } else if (selectedRow2 == "Εξωιδρυματικό Παραπληγ. Επίδομα") && selectedRowCurrent1 >= 1 && selectedRowCurrent2 >= 2 {
-                vc.resultString = "ΠΑΡΟΧΗ ΝΑΙ"
-            } else if (selectedRow2 == "Σύνταξη Γήρατος(Με ειδ. διατάξεις)") && selectedRowCurrent1 >= 6 && selectedRowCurrent2 >= 2 {
-                vc.resultString = "ΠΑΡΟΧΗ ΝΑΙ"
+            } else if (selectedRow2 == "Απόλυτη Αναπηρία") && selectedRowCurrent2 >= 3 {
+                   vc.resultString = "ΕΠΙΔΟΜΑ ΑΠΟΛΥΤΟΥ ΑΝΑΠΗΡΙΑΣ"
+            } else if (selectedRow2 == "Παραπληγία") && selectedRowCurrent1 >= 1 && selectedRowCurrent2 >= 2 {
+                vc.resultString = "ΠΑΡΑΠΛΗΓΙΚΟ ΕΠΙΔΟΜΑ"
+            } else if (selectedRow2 == "Γήρας (Ειδ. διατάξεις)") && selectedRowCurrent1 >= 6 && selectedRowCurrent2 >= 2 {
+                vc.resultString = "ΣΥΝΤΑΞΗ ΓΗΡΑΤΟΣ (ΕΙΔ. ΔΙΑΤΑΞΕΙΣ)"
             } else {
-                vc.resultString = "ΠΑΡΟΧΗ OXI"
+                vc.resultString = "ΑΠΟΡΡΙΨΗ ΑΣΦΑΛΙΣΤΙΚΗΣ ΠΑΡΟΧΗΣ"
             }
             
-        } else if((selectedRow1 == "ΙΚΑ" || selectedRow1 == "ΟΑΕΕ") && selectedRow2 == "Επίδομα Απολύτου Αναπηρίας"){
+        } else if((selectedRow1 == "ΙΚΑ" || selectedRow1 == "ΟΑΕΕ") && selectedRow2 == "Απόλυτη Αναπηρία"){
             if(selectedRowCurrent2 >= 3){
-               vc.resultString = "ΠΑΡΟΧΗ ΝΑΙ"
+               vc.resultString = "ΕΠΙΔΟΜΑ ΑΠΟΛΥΤΟΥ ΑΝΑΠΗΡΙΑΣ"
             } else {
-               vc.resultString = "ΠΑΡΟΧΗ OXI"
+               vc.resultString = "ΑΠΟΡΡΙΨΗ ΑΣΦΑΛΙΣΤΙΚΗΣ ΠΑΡΟΧΗΣ"
             }
         } else if selectedRow1 == "ΔΗΜΟΣΙΟ-ΓΛΚ" && selectedRow2 == "Οφειλόμενη στην Υπηρεσία"{
             if(selectedRowCurrent1 >= 0 && selectedRowCurrent2 >= 2){
-               vc.resultString = "ΠΑΡΟΧΗ ΝΑΙ"
+               vc.resultString = "ΣΥΝΤΑΞΗ ΑΝΙΚΑΝΟΤΗΤΑΣ ΟΦΕΙΛΟΜΕΝΗ ΣΤΗΝ ΥΠΗΡΕΣΙΑ"
             } else {
-               vc.resultString = "ΠΑΡΟΧΗ OXI"
+               vc.resultString = "ΑΠΟΡΡΙΨΗ ΑΣΦΑΛΙΣΤΙΚΗΣ ΠΑΡΟΧΗΣ"
             }
         } else if selectedRow1 == "ΔΗΜΟΣΙΟ-ΓΛΚ" && selectedRow2 == "Μη οφειλόμενη στην Υπηρεσία"{
             if(selectedRowCurrent1 >= 1 && selectedRowCurrent2 >= 2){
-                vc.resultString = "ΠΑΡΟΧΗ ΝΑΙ"
+                vc.resultString = "ΣΥΝΤΑΞΗ ΑΝΙΚΑΝΟΤΗΤΑΣ ΜΗ ΟΦΕΙΛΟΜΕΝΗ ΣΤΗΝ ΥΠΗΡΕΣΙΑ"
             } else {
-                vc.resultString = "ΠΑΡΟΧΗ OXI"
+                vc.resultString = "ΑΠΟΡΡΙΨΗ ΑΣΦΑΛΙΣΤΙΚΗΣ ΠΑΡΟΧΗΣ"
             }
         } else {
-            vc.resultString = "ΠΑΡΟΧΗ OXI"
+            vc.resultString = "ΑΠΟΡΡΙΨΗ ΑΣΦΑΛΙΣΤΙΚΗΣ ΠΑΡΟΧΗΣ"
         }
         
         if(selectedRow1 == "ΙΚΑ"){

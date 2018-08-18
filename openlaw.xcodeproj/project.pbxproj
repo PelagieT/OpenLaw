@@ -17,6 +17,7 @@
 		9F75ECC81F04FA54008B7C1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F75ECBE1F04FA54008B7C1C /* Assets.xcassets */; };
 		9F75ECC91F04FA54008B7C1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F75ECBF1F04FA54008B7C1C /* LaunchScreen.storyboard */; };
 		9F75ECCA1F04FA54008B7C1C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F75ECC01F04FA54008B7C1C /* Info.plist */; };
+		9F771B61212840370095B35A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F771B60212840370095B35A /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		9F75ECBE1F04FA54008B7C1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F75ECBF1F04FA54008B7C1C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F75ECC01F04FA54008B7C1C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F771B60212840370095B35A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				9F75ECBF1F04FA54008B7C1C /* LaunchScreen.storyboard */,
 				9F75ECC01F04FA54008B7C1C /* Info.plist */,
 				9F75ECB61F04FA51008B7C1C /* openlaw-Bridging-Header.h */,
+				9F771B60212840370095B35A /* Constants.swift */,
 			);
 			path = openlaw;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				9F75ECC31F04FA54008B7C1C /* ViewController.swift in Sources */,
 				9F75ECC51F04FA54008B7C1C /* PageViewController2.swift in Sources */,
 				9F75ECC11F04FA54008B7C1C /* AppDelegate.swift in Sources */,
+				9F771B61212840370095B35A /* Constants.swift in Sources */,
 				9F75ECC21F04FA54008B7C1C /* ZFRippleButton.swift in Sources */,
 				9F75ECC41F04FA54008B7C1C /* PageViewController.swift in Sources */,
 				9F75ECC61F04FA54008B7C1C /* ResultViewController.swift in Sources */,
@@ -271,7 +275,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "openlaw/openlaw-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -286,7 +290,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = spiros.openlaw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "openlaw/openlaw-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -309,6 +313,7 @@
 				9F75ECB51F04FA25008B7C1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
