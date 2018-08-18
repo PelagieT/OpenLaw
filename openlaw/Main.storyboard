@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,26 +23,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="fronticon" translatesAutoresizingMaskIntoConstraints="NO" id="Xc0-Ra-4A4">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="disability1" translatesAutoresizingMaskIntoConstraints="NO" id="Xc0-Ra-4A4">
                                 <rect key="frame" x="57" y="212" width="198" height="199"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Xc0-Ra-4A4" secondAttribute="height" multiplier="198:199" id="gDj-Ra-Ipi"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8JQ-cB-1WV">
-                                <rect key="frame" x="104" y="471" width="112" height="47"/>
+                                <rect key="frame" x="101.5" y="471" width="117" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="nIb-ku-AKm"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
                                 <state key="normal" title="ΕΝΑΡΞΗ"/>
                                 <connections>
                                     <segue destination="MB7-Go-9Ee" kind="show" id="dHt-W4-iGV"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ΑΣΦΑΛΙΣΤΙΚΗ ΝΟΜΟΘΕΣΙΑ ΑΝΑΠΗΡΙΑΣ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRF-ay-hOX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ΑΣΦΑΛΙΣΤΙΚΗ ΝΟΜΟΘΕΣΙΑ ΑΝΑΠΗΡΙΑΣ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRF-ay-hOX">
                                 <rect key="frame" x="16" y="72" width="287" height="67"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="67" id="54N-gI-f6Z"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <color key="textColor" red="0.99817889928817749" green="0.5455593594774496" blue="0.12793600047782658" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -396,7 +400,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="fronticon" width="183" height="183"/>
+        <image name="disability1" width="1024" height="1024"/>
         <image name="opengov" width="202" height="60"/>
     </resources>
 </document>
