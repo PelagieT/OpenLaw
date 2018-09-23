@@ -46,13 +46,33 @@ class PageViewController2: UIViewController,UIPickerViewDataSource,UIPickerViewD
             question1.text = "ΜΕΡΕΣ ΑΣΦΑΛΙΣΗΣ"
             pickerData1 = ["1 Ημέρα",">=4500"]
             selectedRowCurrent1 = pickerview1.selectedRow(inComponent: 0)
+        }else if ((selectedRow1 == "ΙΚΑ" || selectedRow1 == "ΟΑΕΕ" ) && selectedRow2 == "Εργατικό Ατύχημα"){
+            question1.text = "ΜΕΡΕΣ ΑΣΦΑΛΙΣΗΣ"
+            pickerData1 = ["1 ημέρα"]
+            selectedRowCurrent1 = pickerview1.selectedRow(inComponent: 0)
+        }else if ((selectedRow1 == "ΙΚΑ") && selectedRow2 == "Ατύχημα Εκτός Εργασίας"){
+            question1.text = "ΜΕΡΕΣ ΑΣΦΑΛΙΣΗΣ"
+            pickerData1 = ["0-749","750-2249 (300ΗΕ τελ. 5ετία)","2250-4500",">4500"]
+            selectedRowCurrent1 = pickerview1.selectedRow(inComponent: 0)
+        }else if (selectedRow1 == "ΟΑΕΕ" && selectedRow2 == "Ατύχημα Εκτός Εργασίας"){
+            question1.text = "ΜΕΡΕΣ ΑΣΦΑΛΙΣΗΣ"
+            pickerData1 = ["0-749","750-2249 (600 τελ. 5ετία)",">2250"]
+            selectedRowCurrent1 = pickerview1.selectedRow(inComponent: 0)
+        }else if ((selectedRow1 == "ΙΚΑ" || selectedRow1 == "ΟΑΕΕ" ) && selectedRow2 == "Παραπληγία"){
+            question1.text = "ΜΕΡΕΣ ΑΣΦΑΛΙΣΗΣ"
+            pickerData1 = ["0-349","350-999 (50ΗΕ προηγ. έτος)",">1000"]
+            selectedRowCurrent1 = pickerview1.selectedRow(inComponent: 0)
+        }else if ((selectedRow1 == "ΙΚΑ" || selectedRow1 == "ΟΑΕΕ" ) && selectedRow2 == "Γήρας (Ειδ. διατάξεις)"){
+            question1.text = "ΜΕΡΕΣ ΑΣΦΑΛΙΣΗΣ"
+            pickerData1 = ["0-4049",">4050"]
+            selectedRowCurrent1 = pickerview1.selectedRow(inComponent: 0)
         }else{
             question1.text = "ΜΕΡΕΣ ΑΣΦΑΛΙΣΗΣ"
-            pickerData1 = ["1 Ημέρα",">= 350 (50Η Προηγούμενο Έτος)",">=750ΗΕ",">= 1000 Οποτεδήποτε" ,">= 1500 (600ΗΕ τελ. 5ετία)", ">=2250",">=4050",">=4500",">=6000"]
+            pickerData1 = ["0-1499","1500-4499 (600 τελ. 5ετία)",">4500"]
             selectedRowCurrent1 = pickerview1.selectedRow(inComponent: 0)
         }
         question2.text = "ΠΟΣΟΣΤΟ ΑΝΑΠΗΡΙΑΣ"
-        pickerData2 = ["<=50%",">=50%",">=67%",">=80%"]
+        pickerData2 = ["0-49.99%","50-66.99%","67-79.99%","80%-100%"]
         selectedRowCurrent2 = pickerview2.selectedRow(inComponent: 0)
 
     }
@@ -67,29 +87,25 @@ class PageViewController2: UIViewController,UIPickerViewDataSource,UIPickerViewD
 
         
         if((selectedRow1 == "ΙΚΑ" || selectedRow1 == "ΟΑΕΕ") && selectedRow2 != "Απόλυτη Αναπηρία" ){
-            if (selectedRow2 == "Κοινή νόσος") && (selectedRowCurrent2 >= 1) && (selectedRowCurrent1 >= 4 ){
-                if selectedRow1 == "ΟΑΕΕ" && selectedRowCurrent2 < 2{
-                    vc.resultString = "ΑΠΟΡΡΙΨΗ ΑΣΦΑΛΙΣΤΙΚΗΣ ΠΑΡΟΧΗΣ"
-                } else{
-                  vc.resultString = "ΣΥΝΤΑΞΗ ΑΝΑΠΗΡΙΑΣ ΚΟΙΝΗ ΝΟΣΟΣ"
-                }
-            } else if (selectedRow2 == "Εργατικό Ατύχημα") && selectedRowCurrent1 >= 0 && selectedRowCurrent2 >= 1{
+            if (selectedRow2 == "Κοινή νόσος") && selectedRow1 == "ΙΚΑ" && (selectedRowCurrent2 >= 1) && (selectedRowCurrent1 >= 1 ){
+                vc.resultString = "ΣΥΝΤΑΞΗ ΑΝΑΠΗΡΙΑΣ ΚΟΙΝΗ ΝΟΣΟΣ"
+            }else if (selectedRow2 == "Κοινή νόσος") && selectedRow1 == "ΟΑΕΕ" && (selectedRowCurrent2 >= 2) && (selectedRowCurrent1 >= 1 ){
+                vc.resultString = "ΣΥΝΤΑΞΗ ΑΝΑΠΗΡΙΑΣ ΚΟΙΝΗ ΝΟΣΟΣ"
+            }else if (selectedRow2 == "Εργατικό Ατύχημα") && selectedRowCurrent1 >= 0 && selectedRowCurrent2 >= 1{
                 if selectedRow1 == "ΟΑΕΕ" && selectedRowCurrent2 < 2{
                     vc.resultString = "ΑΠΟΡΡΙΨΗ ΑΣΦΑΛΙΣΤΙΚΗΣ ΠΑΡΟΧΗΣ"
                 } else{
                     vc.resultString = "ΣΥΝΤΑΞΗ ΑΝΑΠΗΡΙΑΣ ΕΡΓ. ΑΤΥΧΗΜΑ"
                 }
-            } else if (selectedRow2 == "Ατύχημα Εκτός Εργασίας") && selectedRowCurrent1 >= 2 && selectedRowCurrent2 >= 1 {
-                if selectedRow1 == "ΟΑΕΕ" && selectedRowCurrent2 < 2{
-                    vc.resultString = "ΑΠΟΡΡΙΨΗ ΑΣΦΑΛΙΣΤΙΚΗΣ ΠΑΡΟΧΗΣ"
-                } else{
-                    vc.resultString = "ΣΥΝΤΑΞΗ ΑΝΑΠΗΡΙΑΣ ΑΤΥΧΗΜΑ ΕΚΤΟΣ ΕΡΓΑΣΙΑΣ"
-                }
+            } else if (selectedRow2 == "Ατύχημα Εκτός Εργασίας") && selectedRow1 == "ΙΚΑ" && selectedRowCurrent1 >= 1 && selectedRowCurrent2 >= 1 {
+                   vc.resultString = "ΣΥΝΤΑΞΗ ΑΝΑΠΗΡΙΑΣ ΑΤΥΧΗΜΑ ΕΚΤΟΣ ΕΡΓΑΣΙΑΣ"
+            } else if (selectedRow2 == "Ατύχημα Εκτός Εργασίας") && selectedRow1 == "ΟΑΕΕ" && selectedRowCurrent1 >= 1 && selectedRowCurrent2 >= 2 {
+                vc.resultString = "ΣΥΝΤΑΞΗ ΑΝΑΠΗΡΙΑΣ ΑΤΥΧΗΜΑ ΕΚΤΟΣ ΕΡΓΑΣΙΑΣ"
             } else if (selectedRow2 == "Απόλυτη Αναπηρία") && selectedRowCurrent2 >= 3 {
                    vc.resultString = "ΕΠΙΔΟΜΑ ΑΠΟΛΥΤΟΥ ΑΝΑΠΗΡΙΑΣ"
             } else if (selectedRow2 == "Παραπληγία") && selectedRowCurrent1 >= 1 && selectedRowCurrent2 >= 2 {
                 vc.resultString = "ΠΑΡΑΠΛΗΓΙΚΟ ΕΠΙΔΟΜΑ"
-            } else if (selectedRow2 == "Γήρας (Ειδ. διατάξεις)") && selectedRowCurrent1 >= 6 && selectedRowCurrent2 >= 2 {
+            } else if (selectedRow2 == "Γήρας (Ειδ. διατάξεις)") && selectedRowCurrent1 >= 1 && selectedRowCurrent2 >= 2 {
                 vc.resultString = "ΣΥΝΤΑΞΗ ΓΗΡΑΤΟΣ (ΕΙΔ. ΔΙΑΤΑΞΕΙΣ)"
             } else {
                 vc.resultString = "ΑΠΟΡΡΙΨΗ ΑΣΦΑΛΙΣΤΙΚΗΣ ΠΑΡΟΧΗΣ"
